@@ -1,0 +1,7 @@
+body { font-family: system-ui, sans-serif; background:#add8e6; color:#1a202c; padding:20px;}
+.container { max-width:800px; margin:0 auto; }
+header h1 { margin-bottom:10px; }
+section { background:white; padding:12px; border-radius:8px; margin-bottom:12px; box-shadow:0 1px 3px rgba(0,0,0,0.08); }
+label { display:inline-block; margin-right:8px; }
+button { padding:6px 10px; border-radius:6px; }
+#profile {font-family: 'Times New Roman', Times, serif; font-size: large;}

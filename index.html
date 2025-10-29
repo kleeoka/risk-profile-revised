@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>SmartStart Investing - Lite</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header><h1>SmartStart Investing (Lite)</h1></header>
+    <main>
+      <section id="assessment">
+        <h2>Risk Assessment (10 questions)</h2>
+        <div id="questions"></div>
+        <br></br>
+        <button id="resultsBtn" disabled>INCOMPLETE</button>
+        <br></br>
+        <div id="profile"></div>
+      </section>
+
+      <section id="simulation">
+        <h2>Simulation</h2>
+        <label>Initial: $<input id="initial" type="number" value="100"></label>
+        <label>Monthly: $<input id="monthly" type="number" value="25"></label>
+        <label>Years: <input id="years" type="number" value="10"></label>
+
+        <label>Low Risk <input id="risk-level" name="risk" type="radio" value="Low"></label>
+        <label>Medium Risk <input id="risk-level" name="risk" type="radio" value="Medium"></label>
+        <label>High Risk <input id="risk-level" name="risk" type="radio" value="High"></label>
+        <br></br>
+        <button id="runSim">Run Simulation</button>
+        <br></br>
+        <pre id="simResult"></pre>
+      </section>
+
+      <section id="liveQuote">
+        <h2>Live Quote (Alpha Vantage)</h2>
+        <input id="symbol" value="VOO">
+        <button id="getQuote">Fetch</button>
+        <br></br>
+        <pre id="quoteResult"></pre>
+      </section>
+    </main>
+    <footer>Educational demo — not financial advice.</footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
